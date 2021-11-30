@@ -2,34 +2,186 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000168
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
+acknowledgement: We'd like to thank Ben Dichter for helping with NWB and DANDI formatting.
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: two-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  - name: voltage clamp technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 1315162818856
+  numberOfFiles: 165
+  numberOfSubjects: 30
   schemaKey: AssetsSummary
-citation: Rózsa, Márton (2021) Simultaneous jGCaMP8 imaging and loose-seal cell attached
-  recordings layer 2 of V1 during drifting gratings stimuli (Version draft) [Data
-  set]. DANDI archive. https://dandiarchive.org/dandiset/000168/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - PlaneSegmentation
+  - CurrentClampStimulusSeries
+  - TwoPhotonSeries
+  - CurrentClampSeries
+  - VoltageClampStimulusSeries
+  - VoltageClampSeries
+citation: Rozsa, Marton; Liang, Yajie; Zhang, Yan; Hasseman, Jeremy; Kolb, Ilya; Looger,
+  Loren; Svoboda, Karel (2021) Simultaneous loose seal cell-attached recordings  and
+  two-photon imaging of GCaMP8 expressing mouse V1 neurons with drifting gratings
+  visual stimuli (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000168/draft
 contributor:
-- affiliation: []
-  email: qtyush@gmail.com
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: neurozmar@gmail.com
   includeInCitation: true
-  name: Rózsa, Márton
+  name: Rozsa, Marton
   roleName:
+  - dcite:Author
+  - dcite:Researcher
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: Yajie.Liang@som.umaryland.edu
+  includeInCitation: true
+  name: Liang, Yajie
+  roleName:
+  - dcite:Author
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: zhangy11@janelia.hhmi.org
+  includeInCitation: true
+  name: Zhang, Yan
+  roleName:
+  - dcite:Author
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: hassemanj@janelia.hhmi.org
+  includeInCitation: true
+  name: Hasseman, Jeremy
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: kolbi@janelia.hhmi.org
+  includeInCitation: true
+  name: Kolb, Ilya
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: loogerl@janelia.hhmi.org
+  includeInCitation: true
+  name: Looger, Loren
+  roleName:
+  - dcite:Author
+  - dcite:ProjectLeader
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/013sk6x84
+    name: HHMI Janelia Research Campus
+    schemaKey: Affiliation
+  email: svobodak@janelia.hhmi.org
+  includeInCitation: true
+  name: Svoboda, Karel
+  roleName:
+  - dcite:Author
+  - dcite:ProjectLeader
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2021-11-11T20:09:32.963320+00:00'
-description: placeholder
+description: We tested the jGCaMP8 sensors in L2/3 pyramidal neurons of mouse primary
+  visual cortex. We made a craniotomy over V1 and infected neurons with adeno-associated
+  virus (AAV2/1-hSynapsin-1) encoding jGCaMP8 variants (s/m/f), jGCaMP7f, or XCaMP-Gf.
+  18-80 days after the virus injection, the mouse was anesthetized, and we surgically
+  removed the cranial window and performed durotomy. The craniotomy was filled with
+  10-15 μL of 1.5% agarose, and a D-shaped coverslip was secured on top to suppress
+  brain motion and leave access to the brain on the lateral side of the craniotomy.
+  Then mice were lightly anesthetized and mounted under a custom two-photon microscope.
+  Full-field, high-contrast drifting gratings were presented in each of eight directions
+  to the contralateral eye. Two-photon imaging (122 Hz) was performed of L2/3 somata
+  and neuropil combined with loose-seal, cell-attached electrophysiological recording
+  of a single neuron in the field of view.
+ethicsApproval: []
 id: DANDI:000168/draft
 identifier: DANDI:000168
+keywords:
+- 2-photon
+- visual cortex
+- calcium
+- spike
+- action potential
+- layer 2
+- AAV
+- adeno-associated virus
+- jGCaMP8s
+- jGCaMP8m
+- jGCaMP8f
+- jGCaMP7f
+- XCaMP-Gf
+license:
+- spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000168/versions/draft/assets/
-name: Simultaneous jGCaMP8 imaging and loose-seal cell attached recordings layer 2
-  of V1 during drifting gratings stimuli
+name: Simultaneous loose seal cell-attached recordings  and two-photon imaging of
+  GCaMP8 expressing mouse V1 neurons with drifting gratings visual stimuli
+protocol: []
+relatedResource:
+- name: Jupyter notebook explaining the data
+  relation: dcite:IsDocumentedBy
+  repository: github
+  schemaKey: Resource
+  url: https://github.com/rozmar/jGCaMP8_mouse_cell_attached_pipeline/blob/master/NWB_tutorial.ipynb
+- name: HHMI Janelia GCaMP8 page
+  relation: dcite:IsSupplementTo
+  repository: HHMI Janelia Research Campus
+  schemaKey: Resource
+  url: https://www.janelia.org/jgcamp8-calcium-indicators
+- name: Fast and sensitive GCaMP calcium indicators for imaging neural populations
+  relation: dcite:IsPublishedIn
+  repository: bioRxiv
+  schemaKey: Resource
+  url: https://doi.org/10.1101/2021.11.08.467793
 repository: https://dandiarchive.org/
 schemaKey: Dandiset
 schemaVersion: 0.6.0
+studyTarget:
+- Benchmarking of jGCaMP8 protein calcium sensors.
 url: https://dandiarchive.org/dandiset/000168/draft
 version: draft
+wasGeneratedBy: []
