@@ -9,25 +9,25 @@ access:
 acknowledgement: We'd like to thank Ben Dichter for helping with NWB and DANDI formatting.
 assetsSummary:
   approach:
-  - name: electrophysiological approach
-    schemaKey: ApproachType
   - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  - name: electrophysiological approach
     schemaKey: ApproachType
   dataStandard:
   - identifier: RRID:SCR_015242
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: analytical technique
-    schemaKey: MeasurementTechniqueType
   - name: two-photon microscopy technique
     schemaKey: MeasurementTechniqueType
   - name: current clamp technique
     schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
   - name: voltage clamp technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1315162818856
-  numberOfFiles: 165
+  numberOfBytes: 1378144162736
+  numberOfFiles: 170
   numberOfSubjects: 30
   schemaKey: AssetsSummary
   species:
@@ -35,13 +35,13 @@ assetsSummary:
     name: House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - ProcessingModule
   - PlaneSegmentation
-  - CurrentClampStimulusSeries
-  - TwoPhotonSeries
   - CurrentClampSeries
-  - VoltageClampStimulusSeries
+  - ProcessingModule
+  - TwoPhotonSeries
+  - CurrentClampStimulusSeries
   - VoltageClampSeries
+  - VoltageClampStimulusSeries
 citation: Rozsa, Marton; Liang, Yajie; Zhang, Yan; Hasseman, Jeremy; Kolb, Ilya; Looger,
   Loren; Svoboda, Karel (2021) Simultaneous loose seal cell-attached recordings  and
   two-photon imaging of GCaMP8 expressing mouse V1 neurons with drifting gratings
