@@ -162,11 +162,6 @@ name: Simultaneous loose seal cell-attached recordings  and two-photon imaging o
   GCaMP8 expressing mouse V1 neurons with drifting gratings visual stimuli
 protocol: []
 relatedResource:
-- name: Jupyter notebook explaining the data
-  relation: dcite:IsDocumentedBy
-  repository: github
-  schemaKey: Resource
-  url: https://github.com/rozmar/jGCaMP8_mouse_cell_attached_pipeline/blob/master/NWB_tutorial.ipynb
 - name: HHMI Janelia GCaMP8 page
   relation: dcite:IsSupplementTo
   repository: HHMI Janelia Research Campus
@@ -177,7 +172,13 @@ relatedResource:
   repository: bioRxiv
   schemaKey: Resource
   url: https://doi.org/10.1101/2021.11.08.467793
-repository: https://dandiarchive.org/
+- identifier: How to use the dataset
+  name: Jupyter notebook explaining the usage of the dataset
+  relation: dcite:Documents
+  repository: github
+  schemaKey: Resource
+  url: https://github.com/rozmar/jGCaMP8_ground_truth_dataset
+repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.0
 studyTarget:
