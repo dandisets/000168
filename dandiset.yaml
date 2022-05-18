@@ -43,7 +43,7 @@ assetsSummary:
   - VoltageClampStimulusSeries
   - VoltageClampSeries
 citation: Rozsa, Marton; Liang, Yajie; Zhang, Yan; Hasseman, Jeremy; Kolb, Ilya; Looger,
-  Loren; Svoboda, Karel (2022) Simultaneous loose seal cell-attached recordings  and
+  Loren; Svoboda, Karel; HHMI (2022) Simultaneous loose seal cell-attached recordings  and
   two-photon imaging of GCaMP8 expressing mouse V1 neurons with drifting gratings
   visual stimuli (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000168/draft
 contributor:
@@ -51,6 +51,7 @@ contributor:
   - identifier: https://ror.org/013sk6x84
     name: HHMI Janelia Research Campus
     schemaKey: Affiliation
+  awardNumber: HHMI
   email: neurozmar@gmail.com
   includeInCitation: true
   name: Rozsa, Marton
@@ -116,6 +117,7 @@ contributor:
   - identifier: https://ror.org/013sk6x84
     name: HHMI Janelia Research Campus
     schemaKey: Affiliation
+  awardNumber: HHMI
   email: svobodak@janelia.hhmi.org
   includeInCitation: true
   name: Svoboda, Karel
@@ -124,6 +126,13 @@ contributor:
   - dcite:ProjectLeader
   - dcite:ContactPerson
   schemaKey: Person
+- contactPoint: []
+  identifier: https://ror.org/006w34k90
+  includeInCitation: true
+  name: HHMI
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2021-11-11T20:09:32.963320+00:00'
 description: We tested the jGCaMP8 sensors in L2/3 pyramidal neurons of mouse primary
   visual cortex. We made a craniotomy over V1 and infected neurons with adeno-associated
